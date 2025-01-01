@@ -1,0 +1,12 @@
+# Node modules
+node_modules/
+
+# Python cache
+__pycache__/
+
+# AWS/CDK build output
+cdk.out/
+
+# Log files
+*.log
+
