@@ -1,0 +1,45 @@
+flowchart TB
+    subgraph Input["Input Processing"]
+        A[Raw Video Input] --> B[Face Detection]
+        A --> C[Audio Extraction]
+        A --> D[Subtitle Processing]
+        B --> |FaceNet/Dlib| E[Face Recognition]
+        E --> F[Character Mapping]
+        C --> |SpeechBrain| G[Voice Recognition]
+        C --> |pyAudioAnalysis| H[Voice Emotion]
+        D --> |BERT| I[Dialogue Analysis]
+    end
+
+    subgraph Analysis["Scene Understanding"]
+        J[Scene Detection] --> |ResNet/YOLO| K[Scene Classification]
+        K --> L[Theme Extraction]
+        F --> M[Character Interaction]
+        H --> M
+        I --> M
+        M --> N[Emotional Moment Detection]
+    end
+
+    subgraph Generation["Video Generation"]
+        O[Scene Selection] --> P[Effect Application]
+        P --> Q[Transition Generation]
+        Q --> R[Final Edit Assembly]
+    end
+
+    subgraph Learning["Feedback & Learning"]
+        S[Social Media Metrics] --> T[Performance Analysis]
+        T --> U[Model Fine-tuning]
+        U --> V[Style Database]
+    end
+
+    subgraph Storage["Data Storage"]
+        W[(MongoDB/Firebase)]
+        X[(AWS S3)]
+    end
+
+    N --> O
+    L --> O
+    V --> O
+    R --> S
+    V --> W
+    X --> A
+    R --> X

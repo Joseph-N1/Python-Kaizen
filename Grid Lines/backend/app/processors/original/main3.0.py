@@ -4,8 +4,7 @@ import numpy as np
 import random
 
 # Path to your test image
-image_path = r"C:\Users\Joseph N Nimyel\OneDrive\Documents\Python-Kaizen\Grid Lines\images\AOT.jpg"
-
+image_path = r"C:\Users\Joseph N Nimyel\OneDrive\Documents\Python-Kaizen\Grid Lines\backend\app\processors\original\images\AOT2.jpg"
 # Path to your images folder
 image_folder = r"C:\Users\Joseph N Nimyel\OneDrive\Documents\Python-Kaizen\Grid Lines\images"
 
