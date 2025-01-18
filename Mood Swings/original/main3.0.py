@@ -5,7 +5,7 @@ import random
 import os
 
 # Path to your images folder
-image_folder = r"C:\Users\Joseph N Nimyel\OneDrive\Documents\Python-Kaizen\Mood Swings\Images"
+image_folder = r"C:\Users\Joseph N Nimyel\OneDrive\Documents\Python-Kaizen\Mood Swings\original\images\AOT2.jpg"
 # Path to the folder where you want to save the modified images
 save_folder = r"C:\Users\Joseph N Nimyel\OneDrive\Documents\Python-Kaizen\Mood Swings\Modified Images\main3.0"
 
